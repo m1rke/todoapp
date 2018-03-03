@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Todo App by Mirke</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">To-do App </a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<div class = "container">
+  <h1 class="text-center">Todo App</h1>
+
+      <div class = "row">
+        <div class = "col-sm-offset-3 col-md-6 container">
+          <div class="page-header">
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="md-form form-lg">
+                  <input id="novi-tekst" type="text" class="form-control" placeholder="Write up something">
+                </div>
+                 <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-success" id="dodaj" >Add A Task</button>
+              </div>
+              </div>
+            </form>
+          </div>
+          <div id="HTMLtoPDF" class="card">
+    <ul id="todolista" class="list-group list-group-flush">
+
+        <li class="list-group-item"><input type="checkbox" /> Learning Penetration Testing<button type="button" class="btn btn-danger btn-rounded btn pull-right btn-sm obrisi" >Delete</button></li>
+        <li class="list-group-item"><input type="checkbox" />Heroku Deployment<button type="button" class="btn btn-danger btn-rounded btn pull-right btn-sm obrisi">Delete</button></li>
+        <li class="list-group-item"><input type="checkbox" /> Docker tutorials<button  type="button" class="btn btn-danger btn-rounded btn pull-right btn-sm obrisi">Delete</button></li>
+
+    </ul>
+</div>
+<button onclick="HTMLtoPDF()"type="button" class="btn btn-outline-success btn-rounded waves-effect">Generate PDF</button>
+      </div>
+
+
+
+<!--Footer-->
+      <footer class="page-footer font-small blue pt-4 mt-4 fixed-bottom">
+
+          <!--Footer Links-->
+          <div class="container-fluid text-center text-md-left">
+              <div class="row">
+
+                  <!--First column-->
+                  <div class="col-md-6">
+                      <h5 class="text-uppercase">To-do App by Mirke</h5>
+                      <p>The best to-do list app right now</p>
+                  </div>
+                  <!--/.First column-->
+
+              </div>
+          </div>
+          <!--/.Footer Links-->
+
+          <!--Copyright-->
+          <div class="footer-copyright py-3 text-center">
+              <div class="container-fluid">
+                  © 2018 Copyright: <a href="https://www.instagram.com/m1rke/"> To-do App </a>
+
+              </div>
+          </div>
+          <!--/.Copyright-->
+
+      </footer>
+      <!--/.Footer-->
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Todo JavaScript -->
+    <script type="text/javascript" src="js\todo.js"></script>
+    <script src="js/jspdf.js"></script>
+    <script src="js\localstorage.js"></script>
+
+	<script src="js/pdfFromHTML.js"></script>
+
+
+</body>
+
+</html>
