@@ -9,7 +9,7 @@ pipeline {
             sleep 19
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sleep 10
           }
@@ -17,8 +17,27 @@ pipeline {
       }
     }
     stage('Test') {
-      steps {
-        sleep 10
+      parallel {
+        stage('Test') {
+          steps {
+            sleep 10
+          }
+        }
+        stage('chrome') {
+          steps {
+            sh 'ech chrome'
+          }
+        }
+        stage('firefox') {
+          steps {
+            sh 'echo firefox'
+          }
+        }
+        stage('safari') {
+          steps {
+            sh 'echo safari'
+          }
+        }
       }
     }
     stage('Deploy') {
